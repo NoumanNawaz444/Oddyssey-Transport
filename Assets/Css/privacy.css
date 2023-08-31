@@ -1,0 +1,256 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Uber Move';
+}
+nav{
+    display: flex;
+    height: 76px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+nav .logo{
+    height: 50px;
+    width: 150px;
+}
+nav .logo img{
+    height: 100%;
+    width: 100%;
+}
+nav .main_navigation .nav_mobile .logo_mobile{
+    width: 92.91px;
+    height: 29.14px;
+    display: none;
+}
+nav .main_navigation .nav_mobile .logo_mobile img{
+    height: 100%;
+    width: 100%;
+    filter: saturate(200%);
+}
+nav .main_navigation .nav_mobile .mobile_contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 215px;
+    height: 50px;
+    box-shadow: 30px 30px 50px rgba(0, 115, 236, 0.07);
+    border-radius: 43.5px 43.5px 43.5px 43.5px;
+    border: 1px solid rgba(0, 115, 236, 0.07);
+    background-color: white;
+    display: none;
+}
+nav .main_navigation .nav_mobile .mobile_contact a{
+    text-decoration: none;
+    color: #040404;
+}
+
+nav .main_navigation span{
+    margin: 0 10px;
+}
+nav .main_navigation span a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+nav .main_navigation span .home{
+    opacity: .6;
+}
+nav .main_navigation span .about{
+    opacity: .6;
+}
+nav .main_navigation span .Contact{
+    opacity: .6;
+}
+nav .nav_contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 275px;
+    height: 50px;
+    box-shadow: 30px 30px 50px rgba(0, 115, 236, 0.07);
+    border-radius: 43.5px 43.5px 0px 43.5px;
+    border: 1px solid rgba(0, 115, 236, 0.07);
+}
+nav .nav_contact a{
+    text-decoration: none;
+    color: #040404;
+}
+nav .ham{
+    position: absolute;
+    right: 20px;
+    height: 13.35px;
+    width: 16.8px;
+    cursor: pointer;
+    display: none;
+}
+nav .ham img{
+    height: 100%;
+    width: 100%;
+}
+nav .main_navigation .nav_mobile .close_ham{
+    display: none;
+    opacity: 0;
+    pointer-events: none;
+}
+@media screen and (max-width:810px) {
+    nav{
+        padding: 20px;
+    }
+}
+@media screen and (max-width:775px) {
+    nav .ham{
+        display: block;
+    }
+    nav .main_navigation{
+        position: absolute;
+        width: 100%;
+        background-color: rgb(0, 0, 0,0.5);
+        height: 100vh;
+        top: 0;
+        left: 0;
+        z-index: 6;
+        backdrop-filter: blur(5px);
+        justify-content: flex-start;
+        top: -150vh;
+        transition: 0.5s;
+    }
+
+    nav .main_navigation .nav_mobile{
+        display: flex;
+        height: 480px;
+        width: 100%;
+        background-color: black;
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 20px;
+        transition: 0.5s;
+    }
+    nav .main_navigation .nav_mobile .about_mobile span a{
+        color: white;
+    }
+    nav .main_navigation .nav_mobile .about_mobile span{
+        margin: 10px 0;
+    }
+    nav .main_navigation .nav_mobile .about_mobile{
+        display: flex;
+        flex-direction: column;
+    }
+    nav .main_navigation .nav_mobile .logo_mobile{
+        display: block;
+        margin: 40px 0;
+    }
+    nav .main_navigation .nav_mobile .mobile_contact{
+        display: flex;
+        margin: 10px 0;
+    }
+    nav .main_navigation .nav_mobile .about_mobile span .home{
+        position: relative;
+    }
+    nav .main_navigation .nav_mobile .about_mobile  span .about{
+        opacity: .6;
+    }
+    nav .main_navigation .nav_mobile .about_mobile  span .Contact{
+        opacity: .6;
+    }
+    nav .main_navigation .nav_mobile .close_ham{
+        display: block;
+        opacity: 1;
+        pointer-events: all;
+    }
+
+    nav .nav_contact{
+        display: none;
+    }
+    nav .navAyaGya{
+        top: 0;
+    }
+}
+
+
+
+/* policy_one */
+
+.policy_one{
+    width: 90%;
+    margin: 40px auto;
+    padding: 40px 20px;
+    background-color: #F4FAFF;
+}
+.policy_one .head h1{
+    font-size: 2rem;
+}
+@media screen and (max-width:450px) {
+    .policy_one .head h1{
+        font-size: 1.5rem;
+    }
+    .policy_one{
+        padding: 40px 10px;
+        width: 95%;
+    }
+}
+
+
+
+
+
+/* footer_one */
+
+.footer_one{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 50px 30px;
+    width: 98%;
+    color: white;
+    background-color: black;
+    margin: auto;
+    margin-top:50px;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    position: relative;
+    padding-bottom: 10px;
+}
+.footer_one .fo_logo{
+    height: 42px;
+    width: 146px;
+    margin: 0 10px;
+}
+.footer_one .fo_logo img{
+    height: 100%;
+    width: 100%;
+}
+@media screen and (max-width:741px) {
+    .footer_one{
+        justify-content: flex-start;
+        padding: 20px 10px;
+    }
+    .footer_one .fo_logo{
+        margin: 40px 10px;
+    }
+    .footer_one .div{
+        width: 100%;
+    }
+}
+.footer_one .footer_two{
+    display: flex;
+    background-color: white;
+    color: black;
+    justify-content: center;
+    border-radius: 10px;
+    width: 97%;
+    margin: auto;
+    align-items: center;
+    padding: 10px 10px;
+    margin: 20px auto;
+    margin-bottom: 0;
+}
+.footer_one .footer_two p{
+    margin: auto;
+    color: black;
+}

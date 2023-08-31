@@ -1,0 +1,490 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Uber Move';
+}
+nav{
+    display: flex;
+    height: 76px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+nav .logo{
+    height: 50px;
+    width: 120px;
+}
+nav .logo img{
+    height: 100%;
+    width: 100%;
+}
+nav .main_navigation .nav_mobile .logo_mobile{
+    width: 92.91px;
+    height: 29.14px;
+    display: none;
+}
+nav .main_navigation .nav_mobile .logo_mobile img{
+    height: 100%;
+    width: 100%;
+    filter: saturate(200%);
+}
+nav .main_navigation .nav_mobile .mobile_contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 215px;
+    height: 50px;
+    box-shadow: 30px 30px 50px rgba(0, 115, 236, 0.07);
+    border-radius: 43.5px 43.5px 43.5px 43.5px;
+    border: 1px solid rgba(0, 115, 236, 0.07);
+    background-color: white;
+    display: none;
+}
+nav .main_navigation .nav_mobile .mobile_contact a{
+    text-decoration: none;
+    color: #040404;
+}
+
+nav .main_navigation span{
+    margin: 0 10px;
+}
+nav .main_navigation span a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+nav .main_navigation span .home{
+    opacity: .6;
+}
+nav .main_navigation span .about{
+    opacity: .6;
+}
+nav .main_navigation span .Contact{
+    opacity: 1;
+}
+nav .nav_contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 275px;
+    height: 50px;
+    box-shadow: 30px 30px 50px rgba(0, 115, 236, 0.07);
+    border-radius: 43.5px 43.5px 0px 43.5px;
+    border: 1px solid rgba(0, 115, 236, 0.07);
+}
+nav .nav_contact a{
+    text-decoration: none;
+    color: #040404;
+}
+nav .ham{
+    position: absolute;
+    right: 20px;
+    height:35px ;
+    width: 35px;
+    cursor: pointer;
+    background: #FFFFFF;
+    box-shadow: 15px 15px 25px rgba(0, 115, 236, 0.12);
+    border-radius: 8px;
+     /* padding: 8px; */
+     display: none;
+}
+nav .ham img{
+    height: 13.35px;
+    width: 16.8px;
+}
+nav .main_navigation .nav_mobile .close_ham{
+    display: none;
+    opacity: 0;
+    pointer-events: none;
+}
+@media screen and (max-width:810px) {
+    nav{
+        padding: 20px;
+    }
+}
+@media screen and (max-width:775px) {
+    nav .ham{
+        display: flex;
+        justify-content: center;
+        align-items: center;    }
+    nav .main_navigation{
+        position: absolute;
+        width: 100%;
+        background-color: rgb(0, 0, 0,0.5);
+        height: 100vh;
+        top: 0;
+        left: 0;
+        z-index: 6;
+        backdrop-filter: blur(5px);
+        justify-content: flex-start;
+        top: -150vh;
+        transition: 0.5s;
+    }
+
+    nav .main_navigation .nav_mobile{
+        display: flex;
+        height: 480px;
+        width: 100%;
+        background-color: black;
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 20px;
+        transition: 0.5s;
+    }
+    nav .main_navigation .nav_mobile .about_mobile span a{
+        color: white;
+    }
+    nav .main_navigation .nav_mobile .about_mobile span{
+        margin: 10px 0;
+    }
+    nav .main_navigation .nav_mobile .about_mobile{
+        display: flex;
+        flex-direction: column;
+    }
+    nav .main_navigation .nav_mobile .logo_mobile{
+        display: block;
+        margin: 40px 0;
+    }
+    nav .main_navigation .nav_mobile .mobile_contact{
+        display: flex;
+        margin: 10px 0;
+    }
+    nav .main_navigation .nav_mobile .about_mobile span .Contact{
+        opacity: 1;
+        color: #0073EC;
+        position: relative;
+    }
+    nav .main_navigation .nav_mobile .about_mobile  span .about{
+        opacity: .6;
+    }
+    nav .main_navigation .nav_mobile .about_mobile  span .Contact{
+        opacity: 1;
+    }
+    nav .main_navigation .nav_mobile .close_ham{
+        display: block;
+        opacity: 1;
+        pointer-events: all;
+    }
+
+    nav .nav_contact{
+        display: none;
+    }
+    nav .navAyaGya{
+        top: 0;
+    }
+}
+
+
+
+/* get_in_touch */
+
+.get_in_touch{
+    display: flex;
+    text-align: center;
+    margin: 20px 0;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    padding: 20px;
+    padding-top: 70px;
+}
+.get_in_touch .content{
+    display: flex;
+    width: 500px;
+    flex-direction: column;
+}
+.get_in_touch .content h1{
+    font-size: 2.5rem;
+}
+.get_in_touch .content h1 span::before{
+    content: '';
+    height: 3.29px;
+    width: 100%;
+    background-color: #0073EC;
+    position: absolute;
+    bottom: 0;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+}
+
+
+
+
+/* contact_form */
+.main_contact_form{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.main_contact_form .contact_form{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+    width: 700px;
+    border-radius: 10px;
+}
+.main_contact_form .heading{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    margin: 10px 0;
+} 
+.main_contact_form .input_area{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+    margin: 10px 0;
+}
+.main_contact_form .input_area input{
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    background: #FFFFFF;
+    box-shadow: 0px 50px 60px rgba(0, 115, 236, 0.04);
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding-left: 46px;
+}
+.main_contact_form .input_area textarea{
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 150px;
+    max-height: 150px;
+    padding: 10px;
+    background: #FFFFFF;
+    box-shadow: 0px 50px 60px rgba(0, 115, 236, 0.04);
+    border-radius: 5px;
+    border: none;
+    outline: none;
+
+}
+.main_contact_form .input_area #btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 40px;
+    padding: 10px;
+    background: linear-gradient(117.83deg, #0073EC 20.63%, #2E93FF 86.23%);
+    box-shadow: 0px 20px 35px rgba(0, 115, 236, 0.2);
+    border-radius: 37.5px 37.5px 0px 37.5px;
+    color: white;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+.main_contact_form .input_area .image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    bottom: 10px;
+    background: #FFFFFF;
+    box-shadow: 0px 50px 60px rgba(0, 115, 236, 0.04);
+    border-radius: 50%;
+    left: 10px;
+}
+.main_contact_form .input_area .image img{
+    height: 20px;
+    width: 16px;
+    filter: drop-shadow(0px 10px 20px rgba(255, 207, 23, 0.12));
+}
+@media screen and (max-width:560px) {
+    .get_in_touch .new_content{
+        display: none;
+    }
+}
+
+
+/* social links */
+
+
+
+.main_contact_form .social_links{
+    display: flex;
+    width: 280px;
+    flex-wrap: wrap;
+    margin: 10px;
+    justify-content: space-around;
+}
+.main_contact_form .social_links .social_service{
+    text-align: center;
+    width: 100%;
+    padding: 30px 10px;
+    background: #FFFFFF;
+    box-shadow: 0px 12px 60px rgba(0, 115, 236, 0.1);
+    border-radius: 10px;
+    transition: 0.4s;
+    margin: 20px 0;
+    cursor: pointer;
+}
+.main_contact_form .social_links .social_service:hover{
+    scale: 105%;
+}
+@media screen and (max-width:1040px) {
+    .main_contact_form .social_links{
+        padding: 40px 20px;
+        width: 100%;
+        justify-content: center;
+    }
+    .main_contact_form .contact_form{
+        margin-bottom: 60px;
+    }
+    .main_contact_form .social_links .social_service{
+        width: 250px;
+        margin: 20px;
+    }
+}
+@media screen and (max-width:400px) {
+    .main_contact_form .social_links{
+        padding: 20px 0;
+        margin: 0;
+    }
+    .main_contact_form .social_links .social_service{
+        margin: 10px 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* .ready_to_call */
+
+
+
+.ready_to_call{
+    display: flex;
+    width: 94%;
+    margin: 80px auto;
+    border-radius: 20px;
+    background: linear-gradient(125.97deg, #0073EC 8.74%, #2E93FF 90.75%);
+    box-shadow: 0px 50px 80px rgba(0, 115, 236, 0.08);
+    border-radius: 35px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 50px 20px;
+}
+.ready_to_call .content{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.ready_to_call .content h1{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    font-size: 2.5rem;
+    flex-wrap: wrap;
+}
+.ready_to_call .content h1 span::before{
+    content: '';
+    height: 3.29px;
+    width: 100%;
+    background-color: #FFFFFF;
+    position: absolute;
+    bottom: 0;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+}
+.ready_to_call .content a{
+    height: 50px;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    padding: 10px 30px;
+    background: #FFFFFF;
+    box-shadow: 30px 30px 50px rgba(255, 207, 23, 0.07);
+    border-radius: 37.5px 37.5px 0px 37.5px;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #0073EC;
+}
+@media screen and (max-width:600px) {
+    .ready_to_call .content h1{
+        font-size: 2rem;
+    }
+    .ready_to_call{
+        margin: 20px auto;
+    }
+}
+
+
+
+
+/* footer_one */
+
+.footer_one{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 50px 30px;
+    width: 98%;
+    color: white;
+    background-color: black;
+    margin: auto;
+    margin-top:50px;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    position: relative;
+    padding-bottom: 10px;
+}
+.footer_one .fo_logo{
+    height: 42px;
+    width: 146px;
+    margin: 0 10px;
+}
+.footer_one .fo_logo img{
+    height: 100%;
+    width: 100%;
+}
+@media screen and (max-width:741px) {
+    .footer_one{
+        justify-content: flex-start;
+        padding: 20px 10px;
+    }
+    .footer_one .fo_logo{
+        margin: 40px 10px;
+    }
+    .footer_one .div{
+        width: 100%;
+    }
+}
+.footer_one .footer_two{
+    display: flex;
+    background-color: white;
+    color: black;
+    justify-content: center;
+    border-radius: 10px;
+    width: 97%;
+    margin: auto;
+    align-items: center;
+    padding: 10px 10px;
+    margin: 20px auto;
+    margin-bottom: 0;
+}
+.footer_one .footer_two p{
+    margin: auto;
+    color: black;
+}

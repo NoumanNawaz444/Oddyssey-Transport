@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Oddyssey Journey</title>
+    <link rel="stylesheet" href="./Assets/Css/style.css">
+    <link rel="stylesheet" href="./Assets/Fonts/font/stylesheet.css">
+</head>
+
+<body>
+
+    <!-- navbar -->
+
+    <nav>
+        <div class="logo">
+            <a href="./index.html"><img src="./Assets/Images/logo.png" alt=""></a>
+        </div>
+
+        <div class="main_navigation" id="main_navigation">
+            <div class="nav_mobile" style="display: flex;position: relative;">
+                <div class="logo_mobile"><img src="./Assets/Images/mobile-logo.png" alt=""></div>
+                <div class="about_mobile">
+                    <span><a href="./index.html" class="home">Home</a></span>
+                    <span><a href="./about.html" class="about">About Us</a></span>
+                    <span><a href="./Contact-Us.html" class="Contact">Contact Us</a></span>
+                </div>
+
+                <div class="mobile_contact" style="position: relative;"><img src="./Assets/Images/call-icon.png"
+                        style="position: absolute; left: 21px;" alt=""><a href="tel:+441772657107">01772657107</a></div>
+
+                <div class="close_ham" id="close_ham"
+                    style="display: flex; justify-content: center; align-items: center; border-radius: 50%; height: 50px ; width: 50px; border: 2px solid white; position: absolute; bottom: 10px; left: 45%;">
+                    <img src="./Assets/Images/hame-close.png" alt="" style="height: 20px; width: 20px;">
+                </div>
+            </div>
+        </div>
+
+        <div class="nav_contact">
+            <img src="./Assets/Images/call-icon.png" alt="" style="height: 22px; width: 22px; margin-right: 20px;">
+            <a href="tel:+441772657107">01772657107</a>
+        </div>
+
+        <div class="ham" id="ham"><img src="./Assets/Images/ham.png" alt=""></div>
+
+    </nav>
+
+
+    <!-- manchester airport  -->
+    <div class="manchester_airport">
+
+        <div class="manchester_content">
+            <h1><span>Looking To Hire</span> a bus or coach…? You’ve made the right Approach…</h1>
+            <p>We are a Preston-based company providing transport across the whole of the UK. Whether you are travelling
+                to or from within the UK, we’ve got you covered. We offer a reliable and punctual service specialising
+                in airport transfers. We have a fleet of minibuses. Our drivers are fully vetted and insured. We value
+                our customers and their safety and satisfaction are very important to us. We have an excellent track
+                record and a wealth of experience in the transportation industry.</p>
+            <h4>Here for all your travel needs</h4>
+            <p style="color: #0073EC; margin-bottom: 30px;">
+                <span style="display: flex; align-items: center ; margin-right: 10px; margin-bottom: 5px;"><img src="./Assets/Icon/Airport.png" style=" width: 20px; margin-right: 10px;" alt=""> Airport</span>
+                <span style="display: flex; align-items: center ; margin-right: 10px; margin-bottom: 5px;"><img src="./Assets/Icon/Seaport.png" style=" width: 20px; margin-right: 10px;" alt=""> Seaport</span>
+                <span style="display: flex; align-items: center ; margin-right: 10px; margin-bottom: 5px;"><img src="./Assets/Icon/Heliport.png" style=" width: 20px; margin-right: 10px;" alt=""> Heliport</span>
+                <span style="display: flex; align-items: center ; margin-right: 10px; margin-bottom: 5px;"><img src="./Assets/Icon/Group.png" style=" width: 20px; height: 20px; margin-right: 10px;" alt=""> Spaceport eventually</span>
+            </p>
+            <div class="mcc_btns">
+                <a href="tel:+441772657107" class="btnOne">Call Now</a>
+                <a href="#img_two" class="btnTwo">Get Quote</a>
+            </div>
+        </div>
+
+        <div class="manchester_image">
+            <img src="./Assets/Images/car-one-vector.png" alt="" class="imgOne">
+            <img src="./Assets/Images/car-one.png" alt="" class="imgTwo">
+        </div>
+    </div>
+
+    <!-- main_contact form -->
+
+    <div class="main_contact_form" id="img_two">
+
+
+        <form class="inputs_area" action="./mail/MainForm.php" method="post">
+
+            <div class="mcc_heading"
+                style="width:100%;padding:20px 10px;display:flex;align-items:center;justify-content:flex-start;">
+                <h2 style="color:#0073EC">Journey <span style="color:black;">Details</span></h2>
+            </div>
+
+
+            <div class="inner_input">
+                <div class="image"><img src="./Assets/Images/name-icon.png" alt=""></div><input type="text"
+                    placeholder="Your Name" required id="name">
+            </div>
+
+            <div class="inner_input">
+                <div class="image"><img src="./Assets/Images/call-icon-two.png" alt=""></div><input type="text"
+                    placeholder="Your Phone" required id="phone">
+            </div>
+
+            <div class="inner_input">
+                <div class="image"><img src="./Assets/Images/email-icon.png" alt=""></div><input type="email"
+                    placeholder="Your Email" id="email" required>
+            </div>
+
+            <div class="inner_input">
+                <div class="image"><img src="./Assets/Images/datetime-icon.png" alt=""></div><input type="date"
+                    placeholder="Pick Up Date & Time" required>
+            </div>
+
+            <div class="inner_input">
+                <div class="image"><img src="./Assets/Images/passenger-icon.png" alt=""></div><input type="number"
+                    placeholder="Number of Passengers" required id="passengers">
+            </div>
+
+            <div class="inner_input">
+                <div class="image"><img src="./Assets/Images/location-icon.png" alt=""></div><input type="text"
+                    placeholder="Pick Up Location(PostCode Required)" required class="pickLocation" id="pick_location">
+            </div>
+
+            <div class="inner_input">
+                <div class="image"><img src="./Assets/Images/location-icon-two.png" alt=""></div><input type="text"
+                    placeholder="Drop off Location(PostCode Required)" required class="pickLocation" id="drop_location">
+            </div>
+
+            <div class="inner_input">
+                <div class="image"><img src="./Assets/Images/suit-icon.png" alt=""></div><input type="text"
+                    placeholder="Number of SuitCase(Large and Small)" required class="pickLocation"
+                    id="Number_of_SuitCase">
+            </div>
+
+            <div class="inner_input">
+                <div class="image"><img src="./Assets/Images/flight-icon.png" alt=""></div><input type="number"
+                    placeholder="Flight Number" required id="filghtNumber">
+            </div>
+
+            <div class="btn">
+                <div><button type="submit" id="formSubmitBtn">Submit</button></div>
+            </div>
+
+        </form>
+    </div>
+
+
+
+
+    <!-- airport Transfer -->
+
+    <div class="airport_transfer">
+
+        <div class="image">
+            <img src="./Assets/Images/car-two.png" alt="">
+        </div>
+
+        <div class="content">
+            <h1 style="color: black; font-weight: 900;">You Can Go Anywhere With <span style="color: #0073EC;">Odyssey
+                    Journey</span></h1>
+            <p>Do you need to get to a big sports event? Are you planning a day trip with a group or club? Odyssey
+                Journeys are here to help. We are a family run business offering coach and minibus hire in Preston,
+                and across Lancashire. We can transport small and large groups, up to 41 people, to anywhere in the
+                country, and into mainland Europe. <br><br>
+
+                Whether you are going on a day trip, or need group travel to an airport, you can rely on Odyssey
+                Journeys. Give us a call today on 01772 657107, or email us at info@odysseyjourneys.co.uk to make
+                your booking.</p>
+
+            <div class="btn"><a href="#img_two">Get Started</a></div>
+        </div>
+
+
+    </div>
+
+
+    <!-- stress free  area -->
+
+    <div class="stress_free_area" style="background-color: #FBFDFF;">
+
+        <div class="content">
+            <h1 style="text-transform: capitalize; color: black; font-weight: 900;">Making A <span>Booking Is</span>
+                Easy </h1>
+            <p>You can fill out our form to provide the times and locations of your pick up and drop off, along with
+                the number of people you are travelling with. In this way, we can get back to you with a quote right
+                away, so you can choose whether to book with us with all the information you need. Whether you
+                are looking for minibus hire in Preston, or a full coach tour of the UK, Odyssey Journeys has you
+                covered.</p>
+
+            <div class="btn"><a href="#img_two">Get Started</a></div>
+        </div>
+
+        <div class="image"><img src="./Assets/Images/strees-free-img.png" alt=""></div>
+
+    </div>
+
+
+    <!-- Range of vehicles -->
+
+    <div class="range_of_vehicle">
+
+        <div class="image"><img src="./Assets/Images/range of vehicle.png" alt=""></div>
+
+
+        <div class="content">
+            <h1 style="margin: 20px 0; color: black; font-weight: 900;">Where Do You <span
+                    style="position: relative; color: #0073EC;"> Want To GO</span></h1>
+            <p><b>Sporting Events:-</b>Whether you are running a sports team that needs to get to away matches, or you
+                need to transport a group of fans to their big game, we are here to help. Our coaches can transport
+                up to 41 people in safety, comfort and style (and with the combined 41 and 33 seater vehicles, you
+                can have 74 people delivered safely to their destinations, and picked up again).
+
+                <br><br>
+
+                <b>Nights Out:-</b> If you need to transport a large group of people to your party, or you are going on
+                a
+                night out with friends, we are here to help. <br><br> You can also arrange stag weekends, hen-dos and
+                other
+                group parties to places like Blackpool, Manchester and Liverpool with the help of our friendly and
+                reliable team. Just fill out our form or give us a call to book your party.
+
+            </p>
+        </div>
+
+    </div>
+
+
+
+
+
+
+    <!-- our services -->
+
+    <div class="our_services">
+
+        <div class="service">
+            <div class="image"><img src="./Assets/Images/location-icon-three.png" alt=""></div>
+            <div class="content">
+                <h2 style="margin: 15px 0;">Sporting Events</h2>
+                <p>Need a bus to take a group of U’s to a Sporting Event…Rugby, Footy, we’re not picky</p>
+            </div>
+        </div>
+
+        <div class="service">
+            <div class="image"><img src="./Assets/Images/service-icon.png" alt=""></div>
+            <div class="content">
+                <h2 style="margin: 15px 0;">Nights Out</h2>
+                <p>Planning a Night Out…? Pick up & Return until you ready to Bail out </p>
+            </div>
+        </div>
+
+        <div class="service">
+            <div class="image"><img src="./Assets/Images/meet&greet-icon.png" alt=""></div>
+            <div class="content">
+                <h2 style="margin: 15px 0;">Cooperate Event</h2>
+                <p>Got a Corporate Event to attend…book, reschedule or amend!</p><br>
+            </div>
+        </div>
+
+        <div class="service">
+            <div class="image"><img src="./Assets/Images/SEA-icon.png" alt=""></div>
+            <div class="content">
+                <h2 style="margin: 15px 0;">Family Event</h2>
+                <p>Going to a Family Event…Book with us for ease &
+                    comfort!</p>
+            </div>
+        </div>
+
+        <div class="service">
+            <div class="image"><img src="./Assets/Images/departure.png" alt=""></div>
+            <div class="content">
+                <h2 style="margin: 15px 0;">Airport Departure</h2>
+                <p>Book Airport Transfers pre Departure…We’ll be there for you with Pleasure</p>
+            </div>
+        </div>
+
+        <div class="service">
+            <div class="image"><img src="./Assets/Images/bus.png" alt=""></div>
+            <div class="content">
+                <h2 style="margin: 15px 0;">School Trip</h2>
+                <p>Want to book a coach for a school trip…contact us today for a Free quote</p><br>
+            </div>
+        </div>
+
+        <div class="service">
+            <div class="image"><img src="./Assets/Images/big-day.png" alt=""></div>
+            <div class="content">
+                <h2 style="margin: 15px 0;">Big Day</h2>
+                <p>Tying the Knot…ready for your big day? Let us take care of your travels and be there, in a way…!</p>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!-- call me gesture -->
+
+    <div class="call_me_gesture">
+        <div class="content">
+            <h1 style="text-transform: capitalize;">Call Us To Book A Mini Bus</h1>
+            <p style="margin: 20px 0; color: white;">Our agents will be happy to help</p>
+
+            <a href="tel:+441772657107">01772657107</a>
+        </div>
+
+        <div class="image"><img src="./Assets/Images/call-me-gesture.png" alt=""></div>
+    </div>
+
+
+    <!-- Benefits of booking with us -->
+
+    <div class="Benefits">
+
+        <div class="heading" style="margin-bottom: 30px;">
+            <h1 style="color: black; font-weight: 600; text-align: center;"><span
+                    style="position: relative; color: #0073EC;">Benefits</span> of booking with us</h1>
+        </div>
+
+        <div class="image"><img src="./Assets/Images/taxi-img.png" alt=""></div>
+
+        <div class="content">
+
+            <h1>
+                <div class="imageTwo"><img src="./Assets/Images/01-taxi-image.png" alt=""></div>
+                <p> No cancellation charges</p>
+            </h1>
+
+            <h1>
+                <div class="imageTwo"><img src="./Assets/Images/02-taxi-img.png" alt=""></div>
+                <p> No surcharges</p>
+            </h1>
+
+            <h1>
+                <div class="imageTwo"><img src="./Assets/Images/03-taxi-img.png" alt=""></div>
+                <p> No luggage charge</p>
+            </h1>
+
+            <h1>
+                <div class="imageTwo"><img src="./Assets/Images/04-taxi-img.png" alt=""></div>
+                <p> No hidden charges</p>
+            </h1>
+
+            <h1>
+                <div class="imageTwo"><img src="./Assets/Images/05-taxi-img.png" alt=""></div>
+                <p>Free waiting time up to 1 hour at the Airport. We understand flights can be delayed. However, we do
+                    recommend you make the booking 30 minutes to an hour after landing.</p>
+            </h1>
+
+            <h1>
+                <div class="imageTwo"><img src="./Assets/Images/06-taxi-img.png" alt=""></div>
+                <p> Cancellation policy <br><span style="font-weight: 100;"> 100% refund up to 24 hours or more before
+                        the trip.</span></p>
+            </h1>
+
+        </div>
+    </div>
+
+
+
+
+    <!-- testimonial -->
+
+    <div class="testimonial">
+
+        <div class="heading">
+            <h1 style="text-transform: capitalize;">What Our <span
+                    style="color: #0073EC; position: relative;">client</span> says About Us</h1>
+        </div>
+
+    </div>
+
+    <!-- testimonial slider -->
+
+    <div class="testtimonial_slider" style="margin: 50px 0;">
+
+
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <div class="innerContent"
+                        style="display: flex; justify-content: center; align-items: center;flex-wrap: wrap;">
+
+
+                        <h3 style="width: 100%; display: flex; justify-content: center;">Ergin Kesenel</h3>
+
+                        <!-- <p style="width: 100%; display: flex; justify-content: center;">Los Angeles CA</p> -->
+
+                        <div class="image" style="width: 100%; display: flex; justify-content: center;"><img
+                                src="./Assets/Images/5 star rating.png" alt="" height="10px"></div>
+
+                        <p
+                            style="width: 520px; text-align: center; margin: 10px 0;display: flex; padding: 10px; height: 180px;">
+                            <i>
+                                "Thanks a lot, Kammy. You are the best ever. Always on time and drive safe. Hope to see
+                                you again on my next trip."</i>
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="carousel-item">
+                    <div class="innerContent"
+                        style="display: flex; justify-content: center; align-items: center;flex-wrap: wrap;">
+
+
+                        <h3 style="width: 100%; display: flex; justify-content: center;">Kamran Hussain</h3>
+
+                        <!-- <p style="width: 100%; display: flex; justify-content: center;">Pakistan</p> -->
+
+                        <div class="image" style="width: 100%; display: flex; justify-content: center;"><img
+                                src="./Assets/Images/5 star rating.png" alt="" height="10px"></div>
+
+                        <p
+                            style="width: 520px; text-align: center; margin: 10px 0;display: flex; padding: 10px;height: 180px;">
+                            <i>"Excellent service, booked at short notice very early hours in the morning. The driver
+                                arrived quickly. Very professional and knowledgeable. Highly recommended. The water was
+                                a nice touch"</i>
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="carousel-item">
+                    <div class="innerContent"
+                        style="display: flex; justify-content: center; align-items: center;flex-wrap: wrap;">
+
+
+                        <h3 style="width: 100%; display: flex; justify-content: center;">Colin Watson</h3>
+
+                        <!-- <p style="width: 100%; display: flex; justify-content: center;">Los Angeles CA</p> -->
+
+                        <div class="image" style="width: 100%; display: flex; justify-content: center;"><img
+                                src="./Assets/Images/5 star rating.png" alt="" height="10px"></div>
+
+                        <p
+                            style="width: 520px; text-align: center; margin: 10px 0;display: flex; padding: 10px;height: 180px;">
+                            <i>"I
+                                was travelling from the US to Manchester Airport. I prearranged pickup and transport to
+                                Leeds. Aamir contacted me via phone at the airport and was on time. Clean car,
+                                stress-free ride to Leeds with a courteous driver!"</i>
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="carousel-item">
+                    <div class="innerContent"
+                        style="display: flex; justify-content: center; align-items: center;flex-wrap: wrap;">
+
+
+                        <h3 style="width: 100%; display: flex; justify-content: center;">Lutz I.</h3>
+
+                        <!-- <p style="width: 100%; display: flex; justify-content: center;">Los Angeles CA</p> -->
+
+                        <div class="image" style="width: 100%; display: flex; justify-content: center;"><img
+                                src="./Assets/Images/5 star rating.png" alt="" height="10px"></div>
+
+                        <p
+                            style="width: 520px; text-align: center; margin: 10px 0;display: flex; padding: 10px;height: 180px;">
+                            <i>"We travelled from Germany to the UK to visit two Football games around Boxing Day in
+                                Liverpool and Bolton. We really appreciated the service and can highly recommend it. We
+                                will book this company again, when returning to the Manchester region. Thanks
+                                again."</i>
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="carousel-item">
+                    <div class="innerContent"
+                        style="display: flex; justify-content: center; align-items: center;flex-wrap: wrap;">
+
+
+                        <h3 style="width: 100%; display: flex; justify-content: center;">Patricia Mooney</h3>
+
+                        <!-- <p style="width: 100%; display: flex; justify-content: center;">Los Angeles CA</p> -->
+
+                        <div class="image" style="width: 100%; display: flex; justify-content: center;"><img
+                                src="./Assets/Images/5 star rating.png" alt="" height="10px"></div>
+
+                        <p
+                            style="width: 520px; text-align: center; margin: 10px 0;display: flex; padding: 10px;height: 180px;">
+                            <i>"This is such a reliable taxi company. Communication was brilliant. And price very
+                                reasonable. A great wee company all round and will definitely be booking with them
+                                again. It’s great to know I can rely on them."</i>
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="carousel-item">
+                    <div class="innerContent"
+                        style="display: flex; justify-content: center; align-items: center;flex-wrap: wrap;">
+
+
+                        <h3 style="width: 100%; display: flex; justify-content: center;">Markuss Dimitrijevs</h3>
+
+                        <!-- <p style="width: 100%; display: flex; justify-content: center;">Los Angeles CA</p> -->
+
+                        <div class="image" style="width: 100%; display: flex; justify-content: center;"><img
+                                src="./Assets/Images/5 star rating.png" alt="" height="10px"></div>
+
+                        <p
+                            style="width: 520px; text-align: center; margin: 10px 0;display: flex; padding: 10px;height: 180px;">
+                            <i>"This is a fantastic service.I had direct communication with the driver throughout, and
+                                he was still there to pick me up the minute I arrived at the airport. When you are tired
+                                and it is the middle of the night, that is priceless! Highly recommended."</i>
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="carousel-item">
+                    <div class="innerContent"
+                        style="display: flex; justify-content: center; align-items: center;flex-wrap: wrap;">
+
+
+                        <h3 style="width: 100%; display: flex; justify-content: center;">Nicola Williams</h3>
+
+                        <!-- <p style="width: 100%; display: flex; justify-content: center;">Los Angeles CA</p> -->
+
+                        <div class="image" style="width: 100%; display: flex; justify-content: center;"><img
+                                src="./Assets/Images/5 star rating.png" alt="" height="10px"></div>
+
+                        <p
+                            style="width: 520px; text-align: center; margin: 10px 0;display: flex; padding: 10px;height: 180px;">
+                            <i>"As a very frequent flyer from Manchester Airport and many disastrous airport taxi runs I
+                                found these guys. They are amazing.I will never use anyone other than this firm again.
+                                BRILLIANT 5 STARS ⭐️"</i>
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="carousel-item">
+                    <div class="innerContent"
+                        style="display: flex; justify-content: center; align-items: center;flex-wrap: wrap;">
+
+
+                        <h3 style="width: 100%; display: flex; justify-content: center;">kumajang kim</h3>
+
+                        <!-- <p style="width: 100%; display: flex; justify-content: center;">Los Angeles CA</p> -->
+
+                        <div class="image" style="width: 100%; display: flex; justify-content: center;"><img
+                                src="./Assets/Images/5 star rating.png" alt="" height="10px"></div>
+
+                        <p
+                            style="width: 520px; text-align: center; margin: 10px 0;display: flex; padding: 10px;height: 180px;">
+                            <i>"It was my first time choosing a taxi service. I felt very impressed, and the driver was
+                                very polite as he waited for me at the arrival hall. I highly recommend this taxi
+                                service company, and I will rebook my journey to the airport with this company again
+                                "</i>
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="carousel-item">
+                    <div class="innerContent"
+                        style="display: flex; justify-content: center; align-items: center;flex-wrap: wrap;">
+
+
+                        <h3 style="width: 100%; display: flex; justify-content: center;">Barrington Deroy</h3>
+
+                        <!-- <p style="width: 100%; display: flex; justify-content: center;">Los Angeles CA</p> -->
+
+                        <div class="image" style="width: 100%; display: flex; justify-content: center;"><img
+                                src="./Assets/Images/5 star rating.png" alt="" height="10px"></div>
+
+                        <p
+                            style="width: 520px; text-align: center; margin: 10px 0;display: flex; padding: 10px;height: 180px;">
+                            <i>"On Tuesday 03rd Jan 2023, Aamir, collected us from Manchester Airport to
+                                Birmingham.Pointing out points of interest along the way. Aamir handled our luggage
+                                with courtesy.Would definitely use the service when in Manchester again."</i>
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="carousel-item">
+                    <div class="innerContent"
+                        style="display: flex; justify-content: center; align-items: center;flex-wrap: wrap;">
+
+
+                        <h3 style="width: 100%; display: flex; justify-content: center;">Rachel Doherty</h3>
+
+                        <!-- <p style="width: 100%; display: flex; justify-content: center;">Los Angeles CA</p> -->
+
+                        <div class="image" style="width: 100%; display: flex; justify-content: center;"><img
+                                src="./Assets/Images/5 star rating.png" alt="" height="10px"></div>
+
+                        <p
+                            style="width: 520px; text-align: center; margin: 10px 0;display: flex; padding: 10px;height: 180px;">
+                            <i>"Fab experience using this taxi service from Manchester Airport to London Heathrow
+                                The whole journey run smoothly from start to finish. Very professional and friendly
+                                service! Will definitely be using on my return to Manchester again."</i>
+                        </p>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+
+
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <div class="iconOne" style=" position: relative; background-color: #C8E4FF; border-radius: 50%;"><img
+                        src="./Assets/Images/icons8-left-arrow-64.png" alt="" style="width: 30px;"></div>
+                <span class="sr-only">Previous</span>
+            </a>
+
+
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <div class="iconTWo" style=" background-color:#C8E4FF;  position: relative;  border-radius: 50%;"><img
+                        src="./Assets/Images/icons8-right-arrow-64.png" alt="" style="width: 30px;"></div>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+
+
+    <!-- We are Read to take your call! -->
+
+    <div class="ready_to_call">
+        <div class="content">
+            <h1>We are <span style=" display: flex; position: relative; margin: 0 10px;"> Ready </span> to take your
+                call!</h1>
+
+            <a href="tel:+441772657107" style="color: black;">01772657107</a>
+        </div>
+    </div>
+
+
+    <!-- footer one -->
+
+    <div class="footer_one">
+
+        <div class="fo_logo">
+            <img src="./Assets/Images/footer-logo.png" alt="">
+        </div>
+        <div class="div" style="display: flex; flex-wrap: wrap;">
+            <div class="fo_content_one" style="width: 250px;">
+                <h2>Address</h2>
+                <p style="opacity: .7;">odyssey journey ltd,34 st philips road,preston.pR1 6NP</p>
+            </div>
+
+            <div class="fo_contact" style="width: 250px;">
+                <h2>Contacts</h2>
+                <a href="tel:+441772657107" style="opacity: .7; color: white; text-decoration: none;">01772657107</a>
+                <a href="mailto:info@odysseyjourney.co.uk"
+                    style="opacity: .7;color: white; text-decoration: none">info@odysseyjourney.co.uk</a>
+            </div>
+        </div>
+
+        <div class="footer_two">
+            <p>Transport Solutions © 2023 All rights reserved. <a href="./privacypolicy.html"
+                    style="text-decoration: none; color: #0073EC;"> See Privacy Policy </a></p>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+<script src="./Assets/Js/app.js"></script>
+
+</html>
